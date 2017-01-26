@@ -111,6 +111,7 @@ Pod::Spec.new do |s|
     sp.source_files = "#{cast_dir}/**/*.{h,m}"
     sp.exclude_files = "#{cast_dir}/*Tests/**/*"
     sp.private_header_files = "#{cast_dir}/**/*_Private.h"
+    sp.platform = { :ios => "8.0", :tvos => "9.0" }
 
     cast_version = "3.3.0"
     sp.dependency "google-cast-sdk", cast_version
